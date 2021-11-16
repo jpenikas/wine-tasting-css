@@ -110,14 +110,57 @@ section#sautInfograph {
     justify-self: center;
 }
 
-section#sautInfograph > img {
+section#sautInfograph > embed {
     box-shadow: 10px 10px 5px grey;
     border-radius: 8px;
     /* max-height: 900px;
     min-height: 500px;
     width: auto; */
-    max-width: 75%;
+    max-width: 100%;
     max-height: auto;
     display: block;
     margin: 0 auto;
+}
+
+.unstyledTable {
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+th {
+    font-size: 24px;
+}
+
+section#twoBanks {
+    display: grid;
+    grid-template-areas:
+    "title" 
+    "tables" 
+    "graphic";
+}
+
+table.unstyledTable {
+grid-area: tables;
+}
+
+img.twoBanks {
+    grid-area: graphic;
+    justify-self: center;
+    padding: 25px;
+    margin-top: 50px;
+    }
+
+#twoBanks > h1 {
+    grid-area: title;
+    font-size: 36px;
+    font-variant: small-caps;
+    justify-self: center;
 }

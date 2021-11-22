@@ -21,6 +21,8 @@ header {
     justify-self: center;
     align-self: center;
     flex-grow: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 header h1 {
@@ -74,6 +76,8 @@ img#bordeauxMap {
     height: auto;
     justify-content: center;
     align-self: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .sidebar {
@@ -100,8 +104,8 @@ main.info {
 }
 
 section#sautInfo {
+    padding: 10%;
     grid-area: sautInfo;
-    vertical-align: top;
     font-size: 20px;
 }
 
@@ -154,8 +158,7 @@ grid-area: tables;
 img.twoBanks {
     grid-area: graphic;
     justify-self: center;
-    padding: 25px;
-    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
     }
 
 #twoBanks > h1 {
@@ -163,4 +166,134 @@ img.twoBanks {
     font-size: 36px;
     font-variant: small-caps;
     justify-self: center;
+}
+
+button {
+    border-color: white;
+    width: 10%;
+    border-radius: 4px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "picture description";
+}
+
+.lilletPhoto {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 5%;
+
+}
+
+.lilletPhoto > img {
+    width: 85%;
+    height: auto;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
+}
+
+.lillet {
+    grid-area: description;
+    font-size: 20px;
+    padding: 15%;
+}
+
+#graville {
+    grid-area: pic;
+    width: 80%;
+    height: auto;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
+    justify-self: center;
+    align-self: center;
+}
+#gravilleTitle {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+}
+
+#gravilleInfo {
+    grid-area: info;
+    padding: 5px 15px 5px 20px;
+    border: white solid 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+main.graville {
+    display: grid;
+    grid-template-areas: 
+    "title pic"
+    "info info";
+    font-size: 20px;
+    width: 50%;
+    height: auto;
+    margin: 5% 15% 5% 15%;
+}
+
+main#right {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "emilion pomerol";
+    font-size: 20px;
+}
+
+h1.title {
+    grid-area: title;
+}
+
+#emilion {
+    grid-area: emilion;
+    padding: 10px;
+}
+
+#pomerol {
+    grid-area: pomerol;
+    padding: 10px;
+}
+
+main#left {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "pauillac estephe"
+    "echo segur";
+    font-size: 20px;
+}
+
+h1.title {
+    grid-area: title;
+}
+
+#pauillac {
+    grid-area: pauillac;
+    padding: 10px;
+}
+
+#estephe {
+    grid-area: estephe;
+    padding: 10px;
+}
+
+#echo {
+    grid-area: echo;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
+    justify-content: center;
+    align-self: center;
+}
+
+#segur {
+    grid-area: segur;
+    margin: 15px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.60);
 }
